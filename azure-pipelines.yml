@@ -5,6 +5,7 @@
 
 trigger:
 - main
+appendCommitMessageToRunName:teadsadsadsa
 
 pool:
   vmImage: ubuntu-latest
