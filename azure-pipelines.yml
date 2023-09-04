@@ -10,6 +10,6 @@ steps:
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
-    script: 'Test-Connection -TargetName www.google.com -IPv4'
+    script: 'Test-NetConnection 142.251.140.4 -p 443'
 
 
