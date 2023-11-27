@@ -1,5 +1,4 @@
 trigger:
-
   - master
 
 pool:
@@ -7,9 +6,15 @@ pool:
 
 
 steps:
-- task: PowerShell@2
+- task: netsparker-cloud@1
   inputs:
-    targetType: 'inline'
-    script: 'Test-NetConnection 142.251.140.4 -p 443'
-
+    apiConnection: 'azuredevopstest'
+    scanTypes: '2'
+    scanWebSites: '2e1498ff-ad9a-4569-c4e4-ae8301b8e800'
+    scanWebSitesProfile: '3603c9cd-31b1-40a6-be06-af3f02a66845'
+    buildFail: true
+    severity: 'Critical'
+    hasReport: true
+    reportType: 'OwaspTopTen2017'
+    isConfirmed: true
 
