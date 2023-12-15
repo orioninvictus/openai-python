@@ -11,4 +11,4 @@ steps:
     azureSubscription: 'Azure subscription 1(6a076475-3893-4bb2-abf9-9afe45486db1)'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az container create  --resource-group cicd --name scanner2 --cpu 1 --memory 4 --registry-login-server cicd5.azurecr.io --registry-username cicd5 --registry-password oXWv9rBROtWQcYieLqqy8RyjgwZ9Dt7k3bmFH/bRGT+ACRAr3vO5 --image cicd5.azurecr.io/rigel -e ApiToken=EsZOnttOS5qfgF19RHD01X2T+Qt+54bu07c46zIgT0A= ApiRootUrl=https://www.netsparkercloud.com/ AgentName=ganymede '
+    inlineScript: 'az container create  --resource-group cicd --name scanner3 --cpu 1 --memory 4 --registry-login-server cicd5.azurecr.io --registry-username cicd5 --registry-password oXWv9rBROtWQcYieLqqy8RyjgwZ9Dt7k3bmFH/bRGT+ACRAr3vO5 --image cicd5.azurecr.io/rigel -e ApiToken=EsZOnttOS5qfgF19RHD01X2T+Qt+54bu07c46zIgT0A= ApiRootUrl=https://www.netsparkercloud.com/ AgentName=ghostrider '
