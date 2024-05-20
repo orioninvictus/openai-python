@@ -38,7 +38,7 @@ steps:
             WebsiteId = $WebsiteId; ProfileId = $ProfileId; ScanType = $ScanType; VcsCommitInfoModel = @{CiBuildConfigurationName = $env:SYSTEM_TEAMPROJECT; CiBuildHasChange = $env:BUILD_SOURCEVERSION; CiBuildId = $env:BUILD_BUILDID; CiBuildUrl= $env:SYSTEM_TEAMFOUNDATIONCOLLECTIONURI; Committer= $env:BUILD_REQUESTEDFOR; IntegrationSystem = $IntegrationSystem; VcsName = $env:BUILD_REPOSITORY_PROVIDER; VcsVersion = $env:BUILD_SOURCEVERSION }; 
         }
 
-        $Base64Auth = $([System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes(bdb3e6e42e8d4cd53ff8ae5801fec208:fIT+6HKMO3oio0QbIUYbi3GLq3DTHPv4/FrTZt438zY=)))
+        $Base64Auth = $([System.Convert]::ToBase64String([System.Text.Encoding]::ASCII.GetBytes("bdb3e6e42e8d4cd53ff8ae5801fec208":"fIT+6HKMO3oio0QbIUYbi3GLq3DTHPv4/FrTZt438zY="")))
 
         $HeaderWithAuthorization = @{ 
             Authorization = ('Basic ' + $Base64Auth)
