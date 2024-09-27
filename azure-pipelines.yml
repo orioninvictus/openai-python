@@ -8,7 +8,9 @@ steps:
 - task: netsparker-cloud@1
   inputs:
     apiConnection: 'azuredevopstest'
-    scanTypes: '1'
-    scanWebSites: '32bd8bc5-5aa7-430d-3365-afd90226256d'
+    scanTypes: '2'
+    scanWebSites: '2e1498ff-ad9a-4569-c4e4-ae8301b8e800'
+    scanWebSitesProfile: '66094dd8-ee80-43d8-d8fc-af2e03a15091'
     buildFail: true
-    severity: 'Critical,High'
+    severity: 'Critical,High,Medium'
+    hasReport: true
