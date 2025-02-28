@@ -9,6 +9,6 @@ steps:
   inputs:
     apiConnection: 'azuredevopstest'
     scanTypes: '1'
-    scanWebSites: '41605a36-ddb3-471a-3585-b1bd03393a2a'
+    scanWebSites: 'b45e158b-7190-4934-6d65-aefd033fcdb6'
     hasReport: true
     reportType: 'ScanDetail'
